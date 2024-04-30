@@ -1,0 +1,228 @@
+[
+  {
+    "sinnerID": 2,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Analytical Eye",
+        "affinity": "Pride",
+        "cost": 2,
+        "activation": "Res",
+        "desc": ["Deal +10% damage to units with negative status effects."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Keen Observation",
+        "affinity": "Pride",
+        "cost": 3,
+        "activation": "Owned",
+        "desc": ["1 ally with the highest Max HP inflicts 2 Offense Level Down with attacks at a 25% chance."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Downward Slash",
+        "affinity": "Pride",
+        "count": 3,
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "type": "Skill - Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 1 Paralysis"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Upward Slash",
+        "affinity": "Sloth",
+        "count": 2,
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "type": "Skill - Blunt",
+        "desc": [
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 3 Offense Level Down next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Drilling Stab",
+        "affinity": "Gluttony",
+        "count": 1,
+        "base": 6,
+        "plus": 2,
+        "coins": 2,
+        "type": "Skill - Pierce",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 1 Attack Power Down next turn"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 1 Attack Power Down next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Evade",
+        "affinity": "Pride",
+        "count": 1,
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "type": "Defense - Evade",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Paralyze", "Offense Level Down", "Attack Power Down"],
+    "sinKeywords": ["Pride", "Sloth", "Gluttony"],
+    "damageKeywords": ["Blunt", "Pirece", "Evade"]
+  },
+  {
+    "sinnerID": 2,
+    "name": "Lobotomy E.G.O::Regret",
+    "rarity": 3,
+    "passive": [
+      {
+        "name": "Coerced Regret",
+        "affinity": "Wrath",
+        "cost": 6,
+        "activation": "Owned",
+        "desc": [
+          "In a clash, the target has -1 Clash Power for every 3 types of negative effects (Max -2 Clash Power)",
+          "When this unit is alive, enemies affected by Tremor Burst gain 2 Defense Level Down. (3 times per enemy per turn)",
+          "Mental Corruption: If at less than -25 SP at Turn End, gain 2 Bind and 1 Blunt Power Up next turn."
+        ]
+      }
+    ],
+    "support": [
+      {
+        "name": "Repression Work",
+        "affinity": "Wrath",
+        "cost": 5,
+        "activation": "Owned",
+        "desc": [
+          "In a clash, the target of the slowest ally has -1 Clash Power if they have 3+ types of negative effects"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Contracting Straight-jacket",
+        "affinity": "Sloth",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "type": "Skill - Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[On Use] Gain +3 Tremor Count", "[Clash Lose] Gain +3 Tremor Count"]
+          },
+          {
+            "coin": 1,
+            "details": ["[On Hit] Gain +3 Tremor Count", "[On Hit] Inflict +3 Tremor Count"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Metallic Ringing",
+        "affinity": "Pride",
+        "count": 2,
+        "base": 4,
+        "plus": 4,
+        "coins": 3,
+        "type": "Skill - Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": [
+              "[Combat Start] Spend 5 Tremor Count and gain +1 Atk Weight for this Skill",
+              "[On Use] Gain +4 Tremor Count"
+            ]
+          },
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Gain +1 Tremor Count", "[On Hit] Inflict 1 Offense Level Down next turn"]
+          },
+          {
+            "coin": 3,
+            "details": ["[On Hit] Inflict 5 Tremor", "[On Hit] Inflict 1 Plus Coin Drop next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Unleashed Violence",
+        "affinity": "Wrath",
+        "count": 1,
+        "base": 3,
+        "plus": 5,
+        "coins": 3,
+        "type": "Skill - Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": [
+              "[Combat Start] Spend 5 Tremor Count and gain +1 Atk Weight for this Skill (Max+2)",
+              "[Clash Lose] Lose 20 SP",
+              "Deal 6% more Damage per Y Negative effect on target (Max 30%) [On Kill] Gain +2 Tremor Count"
+            ]
+          },
+          {
+            "coin": 1,
+            "details": [
+              "[On Hit] Burst Tremor, Then deal Wrath Damage by 30% of the final Stagger Treshold raised by Burst Tremor. (Max 20)"
+            ]
+          },
+          {
+            "coin": 2,
+            "details": [
+              "[On Hit] Burst Tremor, Then deal Wrath Damage by 30% of the final Stagger Treshold raised by Burst Tremor. (Max 20)"
+            ]
+          },
+          {
+            "coin": 3,
+            "details": [
+              "[On Hit] Burst Tremor, Then deal Wrath Damage by 30% of the final Stagger Treshold raised by Burst Tremor. (Max 20)"
+            ]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Gathering Spite",
+        "affinity": "Gloom",
+        "count": 1,
+        "base": 9,
+        "plus": 6,
+        "coins": 1,
+        "type": "Counter - Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Use] Gain +6 Tremor Count"]
+          }
+        ],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Tremor", "Offense Level Down", "Plus Coin Drop"],
+    "sinKeywords": ["Wrath", "Sloth", "Pride", "Gloom"],
+    "damageKeywords": ["Blunt", "Pirece", "Counter"]
+  }
+]
