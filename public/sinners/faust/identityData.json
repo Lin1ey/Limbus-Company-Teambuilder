@@ -8,7 +8,7 @@
         "name": "Analytical Eye",
         "affinity": "Pride",
         "cost": 2,
-        "activation": "Res",
+        "passiveType": "Res",
         "desc": ["Deal +10% damage to units with negative status effects."]
       }
     ],
@@ -17,7 +17,7 @@
         "name": "Keen Observation",
         "affinity": "Pride",
         "cost": 3,
-        "activation": "Owned",
+        "passiveType": "Owned",
         "desc": ["1 ally with the highest Max HP inflicts 2 Offense Level Down with attacks at a 25% chance."]
       }
     ],
@@ -29,7 +29,8 @@
         "base": 3,
         "plus": 7,
         "coins": 1,
-        "type": "Skill - Blunt",
+        "skillType": "Attack",
+        "damageType": "Blunt",
         "desc": [
           {
             "coin": 1,
@@ -45,7 +46,8 @@
         "base": 4,
         "plus": 4,
         "coins": 2,
-        "type": "Skill - Blunt",
+        "skillType": "Attack",
+        "damageType": "Blunt",
         "desc": [
           {
             "coin": 2,
@@ -61,7 +63,8 @@
         "base": 6,
         "plus": 2,
         "coins": 2,
-        "type": "Skill - Pierce",
+        "skillType": "Attack",
+        "damageType": "Pierce",
         "desc": [
           {
             "coin": 1,
@@ -81,7 +84,8 @@
         "base": 2,
         "plus": 10,
         "coins": 1,
-        "type": "Defense - Evade",
+        "skillType": "Evade",
+        "damageType": "None",
         "desc": [],
         "atkWeight": 1
       }
@@ -99,7 +103,7 @@
         "name": "Coerced Regret",
         "affinity": "Wrath",
         "cost": 6,
-        "activation": "Owned",
+        "passiveType": "Owned",
         "desc": [
           "In a clash, the target has -1 Clash Power for every 3 types of negative effects (Max -2 Clash Power)",
           "When this unit is alive, enemies affected by Tremor Burst gain 2 Defense Level Down. (3 times per enemy per turn)",
@@ -112,7 +116,7 @@
         "name": "Repression Work",
         "affinity": "Wrath",
         "cost": 5,
-        "activation": "Owned",
+        "passiveType": "Owned",
         "desc": [
           "In a clash, the target of the slowest ally has -1 Clash Power if they have 3+ types of negative effects"
         ]
@@ -126,7 +130,8 @@
         "base": 4,
         "plus": 7,
         "coins": 1,
-        "type": "Skill - Blunt",
+        "skillType":"Attack",
+        "damageType": "Blunt",
         "desc": [
           {
             "coin": 0,
@@ -146,7 +151,8 @@
         "base": 4,
         "plus": 4,
         "coins": 3,
-        "type": "Skill - Blunt",
+        "skillType":"Attack",
+        "damageType": "Blunt",
         "desc": [
           {
             "coin": 0,
@@ -173,7 +179,8 @@
         "base": 3,
         "plus": 5,
         "coins": 3,
-        "type": "Skill - Blunt",
+        "skillType":"Attack",
+        "damageType": "Blunt",
         "desc": [
           {
             "coin": 0,
@@ -211,7 +218,8 @@
         "base": 9,
         "plus": 6,
         "coins": 1,
-        "type": "Counter - Blunt",
+        "skillType": "Counter",
+        "damageType": "Blunt",
         "desc": [
           {
             "coin": 1,
