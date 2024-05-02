@@ -33,8 +33,8 @@ export interface Identity {
   sinnerID: number;
   name: string;
   rarity: 1 | 2 | 3;
-  passive: PassiveSkill;
-  support: PassiveSkill;
+  passive: PassiveSkill[];
+  support: PassiveSkill[];
   skills: Skill[];
   statusKeywords: string[];
   sinKeywords: string[];
