@@ -1,0 +1,1234 @@
+[
+  {
+    "sinnerID": 1,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Information Relay",
+        "affinity": "Gloom",
+        "cost": 4,
+        "passiveType": "Res",
+        "desc": ["Apply 1 Damage Up to 2 allies placed after this unit on the Dashboard."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Information Neutralization",
+        "affinity": "Gloom",
+        "cost": 4,
+        "passiveType": "Owned",
+        "desc": ["At the end of the turn, Heal 10 SP for 1 ally with the lowest SP if the lost SP."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Deflect",
+        "affinity": "Gloom",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 2 Sinking"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "End-stop Stab",
+        "affinity": "Envy",
+        "count": 2,
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 2,
+            "details": ["[Heads Hit] Inflict 2 Sinking; Inflict +1 Sinking count"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Enjamb",
+        "affinity": "Sloth",
+        "count": 1,
+        "base": 6,
+        "plus": 2,
+        "coins": 3,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 2 Sinking"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 1 Sinking"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] If target's SP is below 0, inflict 1 Fragile"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Guard",
+        "affinity": "Gloom",
+        "count": 1,
+        "base": 7,
+        "plus": 3,
+        "coins": 1,
+        "skillType": "Guard",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Sinking", "Fragile"],
+    "sinKeywords": ["Gloom", "Envy", "Sloth"],
+    "damageKeywords": ["Slash", "Pirece", "Guard"]
+  },
+  {
+    "sinnerID": 2,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Analytical Eye",
+        "affinity": "Pride",
+        "cost": 2,
+        "passiveType": "Res",
+        "desc": ["Deal +10% damage to units with negative status effects."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Keen Observation",
+        "affinity": "Pride",
+        "cost": 3,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the highest Max HP inflicts 2 Offense Level Down with attacks at a 25% chance."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Downward Slash",
+        "affinity": "Pride",
+        "count": 3,
+        "base": 3,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 1 Paralysis"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Upward Slash",
+        "affinity": "Sloth",
+        "count": 2,
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 3 Offense Level Down next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Drilling Stab",
+        "affinity": "Gluttony",
+        "count": 1,
+        "base": 6,
+        "plus": 2,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 1 Attack Power Down next turn"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 1 Attack Power Down next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Evade",
+        "affinity": "Pride",
+        "count": 1,
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "skillType": "Evade",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Paralyze", "Offense Level Down", "Attack Power Down"],
+    "sinKeywords": ["Pride", "Sloth", "Gluttony"],
+    "damageKeywords": ["Blunt", "Pirece", "Evade"]
+  },
+  {
+    "sinnerID": 3,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Righteous Retribution",
+        "affinity": "Lust",
+        "cost": 3,
+        "passiveType": "Res",
+        "desc": ["Skills deal +10% damage in won clash."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Support",
+        "affinity": "Lust",
+        "cost": 5,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the highest SP deals +10% Pierce damage."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Joust",
+        "affinity": "Lust",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[Clash Win] Gain 2 Haste next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Galloping Tilt",
+        "affinity": "Envy",
+        "count": 2,
+        "base": 4,
+        "plus": 12,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[Clash Win] Gain 2 Attack Power Up next turn"]
+          },
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 2 Bleed"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "For Justice!",
+        "affinity": "Gluttony",
+        "count": 1,
+        "base": 3,
+        "plus": 3,
+        "coins": 3,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["Coin Power +2 at 10+ Speed"]
+          },
+          {
+            "coin": 1,
+            "details": [" [On Hit] Inflict 1 Bleed"]
+          },
+          {
+            "coin": 2,
+            "details": [" [On Hit] Inflict 1 Bleed"]
+          },
+          {
+            "coin": 3,
+            "details": [" [On Hit] Inflict +2 Bleed Count"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Evade",
+        "affinity": "Lust",
+        "count": 1,
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "skillType": "Evade",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Haste", "Bleed", "Attack Power Up"],
+    "sinKeywords": ["Lust", "Envy", "Gluttony"],
+    "damageKeywords": ["Pirece", "Evade"]
+  },
+  {
+    "sinnerID": 4,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Indiscriminate Art",
+        "affinity": "Gluttony",
+        "cost": 3,
+        "passiveType": "Res",
+        "desc": ["Deal and take +25% damage."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Hustle",
+        "affinity": "Gluttony",
+        "cost": 3,
+        "passiveType": "Res",
+        "desc": ["1 ally with the lowest Max HP deals and takes +20% damage."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Paint",
+        "affinity": "Gluttony",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Gain 2 Poise next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Splatter",
+        "affinity": "Lust",
+        "count": 2,
+        "base": 4,
+        "plus": 5,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["If target previously took damage this turn, deal +30% damage"]
+          },
+          {
+            "coin": 2,
+            "details": ["If target previously took damage this turn, deal +30% damage"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Brushstroke",
+        "affinity": "Pride",
+        "count": 1,
+        "base": 5,
+        "plus": 3,
+        "coins": 3,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[Combat Start] Gain 2 Slash DMG Up"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Gain 2 Poise next turn"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Evade",
+        "affinity": "Gluttony",
+        "count": 1,
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "skillType": "Evade",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Poise", "Slash DMG Up"],
+    "sinKeywords": ["Gluttony", "Lust", "Pride"],
+    "damageKeywords": ["Slash", "Evade"]
+  },
+  {
+    "sinnerID": 5,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Determined",
+        "affinity": "Sloth",
+        "cost": 2,
+        "passiveType": "Owned",
+        "desc": ["At less than 50% HP, gain 1 Protection at the start of combat phase."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Backup",
+        "affinity": "Sloth",
+        "cost": 3,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the highest Max HP takes -10% damage from attack skills."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Un, Deux",
+        "affinity": "Sloth",
+        "count": 3,
+        "base": 3,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 1 Tremor"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 1 Tremor"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Nailing Fist",
+        "affinity": "Pride",
+        "count": 2,
+        "base": 6,
+        "plus": 9,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[On Use] Gain 3 Defense Level Up next turn"]
+          },
+          {
+            "coin": 1,
+            "details": ["[On Hit] Burst Tremor"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Des Coups",
+        "affinity": "Gloom",
+        "count": 1,
+        "base": 4,
+        "plus": 2,
+        "coins": 4,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[On Use] Gain 3 Defense Level Up next turn"]
+          },
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 1 Tremor"]
+          },
+          {
+            "coin": 2,
+            "details": ["[Heads Hit] Inflict 1 Tremor"]
+          },
+          {
+            "coin": 3,
+            "details": ["[Heads Hit] Inflict 1 Tremor"]
+          },
+          {
+            "coin": 4,
+            "details": ["[Heads Hit] Apply +2 Tremor count"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Guard",
+        "affinity": "Sloth",
+        "count": 1,
+        "base": 10,
+        "plus": 3,
+        "coins": 1,
+        "skillType": "Guard",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Tremor", "Defense Level Up", "Protection"],
+    "sinKeywords": ["Sloth", "Pride", "Gloom"],
+    "damageKeywords": ["Blunt", "Guard"]
+  },
+  {
+    "sinnerID": 6,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Entertainment",
+        "affinity": "Sloth",
+        "cost": 2,
+        "passiveType": "Res",
+        "desc": ["Heal 6 SP next turn."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Frivolous Jokes",
+        "affinity": "Sloth",
+        "cost": 5,
+        "passiveType": "Owned",
+        "desc": ["At the start of combat phase, the ally with the lowest SP heals 6 SP."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Downward Cleave",
+        "affinity": "Pride",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 2 Sinking"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Dual Strike",
+        "affinity": "Sloth",
+        "count": 2,
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["If user took no damage last turn, Coin Power +1"]
+          },
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 2 Sinking"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 2 Rupture"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Whirlwind",
+        "affinity": "Lust",
+        "count": 1,
+        "base": 6,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["Coin Power +2 If user took no damage last turn"]
+          },
+          {
+            "coin": 2,
+            "details": [
+              " [Heads Hit] Inflict 2 Attack Power Down",
+              "[On Hit] Inflict 2 Sinking",
+              "[On Hit] Inflict 2 Rupture"
+            ]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Guard",
+        "affinity": "Sloth",
+        "count": 1,
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "skillType": "Evade",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Sinking", "Rupture", "Attack Power Down"],
+    "sinKeywords": ["Pride", "Sloth", "Lust"],
+    "damageKeywords": ["Slash", "Blunt", "Evade"]
+  },
+  {
+    "sinnerID": 7,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Ressentiment",
+        "affinity": "Envy",
+        "cost": 4,
+        "passiveType": "Res",
+        "desc": ["Deal +10% damage to targets with higher Max HP."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Spite-driven",
+        "affinity": "Envy",
+        "cost": 5,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the lowest Max HP deals +10% Blunt damage."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Bat Bash",
+        "affinity": "Envy",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 3 Tremor"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Smackdown",
+        "affinity": "Wrath",
+        "count": 2,
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[On Use] Gain 1 Attack Power Up and Damage Up next turn"]
+          },
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 2 Tremor"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Upheaval",
+        "affinity": "Lust",
+        "count": 1,
+        "base": 4,
+        "plus": 8,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Next Coin has +2 Power"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Burst Tremor"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Counter",
+        "affinity": "Envy",
+        "count": 1,
+        "base": 7,
+        "plus": 4,
+        "coins": 1,
+        "skillType": "Counter",
+        "damageType": "Blunt",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Tremor", "Attack Power Up", "Damage Up"],
+    "sinKeywords": ["Envy", "Wrath", "Lust"],
+    "damageKeywords": ["Blunt", "Counter"]
+  },
+  {
+    "sinnerID": 8,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Last-ditch Struggle",
+        "affinity": "Wrath",
+        "cost": 3,
+        "passiveType": "Owned",
+        "desc": ["At less than 25% HP, gain +1 clash Power in a clash."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Determination to Survive",
+        "affinity": "Wrath",
+        "cost": 6,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the lowest HP and less than 50% of max HP gains +1 clash Power in a clash."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Loggerhead",
+        "affinity": "Wrath",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Apply +1 Tremor count"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Slide",
+        "affinity": "Gluttony",
+        "count": 2,
+        "base": 6,
+        "plus": 9,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[Clash Win] Inflict 3 Defense Power Down"]
+          },
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 3 Tremor"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Shield Bash",
+        "affinity": "Gloom",
+        "count": 1,
+        "base": 8,
+        "plus": 12,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Blunt",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Burst Tremor; Inflict 1 Blunt Fragility"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Guard",
+        "affinity": "Wrath",
+        "count": 1,
+        "base": 7,
+        "plus": 3,
+        "coins": 1,
+        "skillType": "Guard",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Tremor", "Defense Power Down", "Blunt Fragility"],
+    "sinKeywords": ["Wrath", "Gluttony", "Gloom"],
+    "damageKeywords": ["Blunt", "Guard"]
+  },
+  {
+    "sinnerID": 9,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Split Evil",
+        "affinity": "Wrath",
+        "cost": 5,
+        "passiveType": "Owned",
+        "desc": ["On hit, inflict 1 Bleed at a 50% chance."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Gambler",
+        "affinity": "Wrath",
+        "cost": 5,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the highest HP deals +20% damage with Heads Coins."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Strike Down",
+        "affinity": "Gluttony",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 2 Bleed"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Axe Combo",
+        "affinity": "Pride",
+        "count": 2,
+        "base": 4,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 2 Bleed"]
+          },
+          {
+            "coin": 2,
+            "details": ["[On Hit] Inflict 2 Bleed", "[Heads Hit] Inflict +1 Bleed Count"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Slay",
+        "affinity": "Wrath",
+        "count": 1,
+        "base": 4,
+        "plus": 2,
+        "coins": 4,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["Skill Power +1 at lower than 0 SP."]
+          },
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 1 Bleed"]
+          },
+          {
+            "coin": 2,
+            "details": ["[Heads Hit] Inflict 1 Bleed"]
+          },
+          {
+            "coin": 3,
+            "details": ["[Heads Hit] Inflict 1 Bleed"]
+          },
+          {
+            "coin": 4,
+            "details": ["[On Hit] Deal +20% Damage if target has +6 Bleed"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Counter",
+        "affinity": "Wrath",
+        "count": 1,
+        "base": 7,
+        "plus": 4,
+        "coins": 1,
+        "skillType": "Counter",
+        "damageType": "Slash",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Bleed"],
+    "sinKeywords": ["Gluttony", "Pride", "Wrath"],
+    "damageKeywords": ["Slash", "Counter"]
+  },
+  {
+    "sinnerID": 11,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Determined",
+        "affinity": "Pride",
+        "cost": 3,
+        "passiveType": "Owned",
+        "desc": ["When an ally is defeated, gain 1 Attack Power Up next turn."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Conscience",
+        "affinity": "Pride",
+        "cost": 3,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the lowest SP gains 1 Attack Power Up the turn after an ally is defeated."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Downward Swing",
+        "affinity": "Pride",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 2 Rupture"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Halberd Combo",
+        "affinity": "Wrath",
+        "count": 2,
+        "base": 4,
+        "plus": 2,
+        "coins": 3,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[Clash Win] +30% damage"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Ravaging Cut",
+        "affinity": "Envy",
+        "count": 1,
+        "base": 5,
+        "plus": 3,
+        "coins": 3,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["[Clash Win] Gain 1 Attack Power Up"]
+          },
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 1 Rupture"]
+          },
+          {
+            "coin": 2,
+            "details": ["[Heads Hit] Inflict 1 Rupture"]
+          },
+          {
+            "coin": 3,
+            "details": ["[Heads Hit] Inflict 1 Rupture"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Counter",
+        "affinity": "Pride",
+        "count": 1,
+        "base": 7,
+        "plus": 4,
+        "coins": 1,
+        "skillType": "Counter",
+        "damageType": "Slash",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Rupture", "Attack Power Up"],
+    "sinKeywords": ["Pride", "Wrath", "Envy"],
+    "damageKeywords": ["Slash", "Counter"]
+  },
+  {
+    "sinnerID": 12,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Executor",
+        "affinity": "Sloth",
+        "cost": 4,
+        "passiveType": "Owned",
+        "desc": ["If target's SP is below 0, deal 10% damage."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Military Mindset",
+        "affinity": "Sloth",
+        "cost": 5,
+        "passiveType": "Owned",
+        "desc": ["1 ally with the highest HP deals +30% damage to enemies below 0 SP."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Pulled Blade",
+        "affinity": "Sloth",
+        "count": 3,
+        "base": 3,
+        "plus": 2,
+        "coins": 3,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 2,
+            "details": ["[Heads Hit] Inflict 1 Rupture"]
+          },
+          {
+            "coin": 3,
+            "details": ["[Heads Hit] Inflict 1 Rupture"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Backslash",
+        "affinity": "Pride",
+        "count": 2,
+        "base": 5,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["+20% Damage if user's speed is higher than target's"]
+          },
+          {
+            "coin": 2,
+            "details": ["+20% Damage if user's speed is higher than target's"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Piercing Thrust",
+        "affinity": "Gloom",
+        "count": 1,
+        "base": 7,
+        "plus": 14,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 0,
+            "details": ["If target's HP is above 50%, deal 20% damage"]
+          },
+          {
+            "coin": 1,
+            "details": ["[On Hit] Inflict 1 Rupture Count"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Evade",
+        "affinity": "Sloth",
+        "count": 1,
+        "base": 2,
+        "plus": 10,
+        "coins": 1,
+        "skillType": "Evade",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Rupture"],
+    "sinKeywords": ["Sloth", "Pride", "Gloom"],
+    "damageKeywords": ["Pirece", "Slash", "Evade"]
+  },
+  {
+    "sinnerID": 13,
+    "name": "LCB Sinner",
+    "rarity": 1,
+    "passive": [
+      {
+        "name": "Forced to Survive",
+        "affinity": "Gloom",
+        "cost": 3,
+        "passiveType": "Owned",
+        "desc": ["Heal 5 HP at the start of the combat phase."]
+      }
+    ],
+    "support": [
+      {
+        "name": "Gene Code G-0",
+        "affinity": "Gloom",
+        "cost": 3,
+        "passiveType": "Owned",
+        "desc": ["At the start of combat phase, the ally with the lowest HP heals 5 HP."]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Swipe",
+        "affinity": "Gloom",
+        "count": 3,
+        "base": 4,
+        "plus": 7,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Slash",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[Heads Hit] Inflict 4 Rupture"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Jag",
+        "affinity": "Gluttony",
+        "count": 2,
+        "base": 5,
+        "plus": 10,
+        "coins": 1,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 1,
+            "details": [
+              "[On Hit] Apply +1 Rupture count",
+              "[Heads Hit] Inflict 1 Pierce Fragility",
+              "[Heads Hit] Inflict 2 Rupture"
+            ]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Chop Up",
+        "affinity": "Sloth",
+        "count": 1,
+        "base": 6,
+        "plus": 4,
+        "coins": 2,
+        "skillType": "Attack",
+        "damageType": "Pierce",
+        "desc": [
+          {
+            "coin": 1,
+            "details": ["[On Hit] +10% Damage if target has Rupture"]
+          },
+          {
+            "coin": 1,
+            "details": ["[On Hit] +10% Damage if target has Rupture", "[Heads Hit] Heal by 30% of damage dealt"]
+          }
+        ],
+        "atkWeight": 1
+      },
+      {
+        "name": "Guard",
+        "affinity": "Gloom",
+        "count": 1,
+        "base": 8,
+        "plus": 3,
+        "coins": 1,
+        "skillType": "Guard",
+        "damageType": "None",
+        "desc": [],
+        "atkWeight": 1
+      }
+    ],
+    "statusKeywords": ["Rupture", "Pierce Fragility"],
+    "sinKeywords": ["Gloom", "Gluttony", "Sloth"],
+    "damageKeywords": ["Pirece", "Slash", "Guard"]
+  }
+]
