@@ -1,0 +1,44 @@
+.sinner-card {
+    position: relative;
+    border: 6px solid var(--border-dim);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.sinner-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.sinner-card:hover {
+    border: 6px solid var(--border-bright);
+}
+
+.sinner-card-img.Inactive {
+    filter: brightness(10%);
+}
+
+.sinner-card-name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0px;
+    color: var(--gold-text);
+    font-size: 36px;
+    text-align: right;
+    width: 100%;
+    z-index: 1;
+}
+
+.sinner-card-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
