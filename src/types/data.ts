@@ -2,6 +2,7 @@ export type Sin = "Wrath" | "Lust" | "Sloth" | "Gluttony" | "Gloom" | "Pride" | 
 export type DamageType = "Slash" | "Blunt" | "Pierce" | "None";
 export type SkillType = "Attack" | "Guard" | "Evade" | "Counter";
 export type PassiveType = "Owned" | "Res";
+export type SinnerSelectedState = "Active" | "Support" | "Inactive";
 
 export interface SkillDesc {
   coin: number;
