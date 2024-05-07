@@ -24,7 +24,7 @@ export function getSinnerFromID(id: number) {
     case 8:
       return "Ishmael";
     case 9:
-      return "Rodian";
+      return "Rodion";
     case 10:
       return "Dante";
     case 11:
@@ -38,6 +38,40 @@ export function getSinnerFromID(id: number) {
   }
 }
 
+export function getIDFromSinner(sinnerName: string) {
+  let name = sinnerName.replace(/\s/g, "").toLowerCase();
+  switch (name) {
+    case "yisang":
+      return 1;
+    case "faust":
+      return 2;
+    case "donquixote":
+      return 3;
+    case "ryoshu":
+      return 4;
+    case "meursault":
+      return 5;
+    case "honglu":
+      return 6;
+    case "heathcliff":
+      return 7;
+    case "ishmael":
+      return 8;
+    case "rodion":
+      return 9;
+    case "dante":
+      return 10;
+    case "sinclair":
+      return 11;
+    case "outis":
+      return 12;
+    case "gregor":
+      return 13;
+    default:
+      return 0;
+  }
+}
+
 /**
  * returns an array of jsons of the sinner's identities
  * @param sinnerId id number of the sinner
@@ -46,6 +80,11 @@ export function getSinnerFromID(id: number) {
 export async function getSinnerJSON(sinnerID: number) {
   let sinnerName = getSinnerFromID(sinnerID).replace(/\s/g, "").toLowerCase();
   let data = await fetch(`/sinners/${sinnerName}/identityData.json`).then((data) => data.json());
+  return data;
+}
+
+export async function getInitalSinnerJSON() {
+  let data = await fetch(`/sinners/initialTeam.json`).then((data) => data.json());
   return data;
 }
 
