@@ -9,6 +9,7 @@ type PrivateProps = {
 };
 
 export type SinnerCardContentProps = {
+  sinnerID: number;
   cardState: SinnerSelectedState;
   setSelectedState: Function;
 };
@@ -24,7 +25,7 @@ function SinnerCard({ id, Content }: PrivateProps) {
     <div className="sinner-card">
       <img className={`sinner-card-img ${selectedState}`} src={`${imagePath}`}></img>
       <div className={`sinner-card-content`}>
-        <Content cardState={selectedState} setSelectedState={setSelectedState} />
+        <Content sinnerID={sinnerId} cardState={selectedState} setSelectedState={setSelectedState} />
         <div className="sinner-card-name"><b>{name}</b></div>
       </div>
     </div>

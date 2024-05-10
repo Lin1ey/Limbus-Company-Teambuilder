@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { SinnerCardContentProps } from "@components/sinner_board/SinnerCard";
 
-import "@css/sinner_board/SinnerCardEditSelectContent.css"
+import "@css/sinner_board/SinnerCardEditSelectContent.css";
+import Modal from "./Modal";
 
-function SinnerCardEditSelectContent({ cardState, setSelectedState }: SinnerCardContentProps) {
+function SinnerCardEditSelectContent({ sinnerID, cardState, setSelectedState }: SinnerCardContentProps) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  function onClickCloseModal() {
+    setModalOpen(false);
+  }
+
   function onClickEditIdentity() {
-    console.log("clicked edit");
+    setModalOpen(true);
   }
 
   function onClickSelectIdentity() {
@@ -34,6 +41,7 @@ function SinnerCardEditSelectContent({ cardState, setSelectedState }: SinnerCard
         SELECT
       </div>
       <img className={`selected-tag ${cardState}`} src={"./assets/SelectedTag.png"}></img>
+      {modalOpen && <Modal sinnerID={sinnerID} onClose={() => onClickCloseModal()} />}
     </>
   );
 }
